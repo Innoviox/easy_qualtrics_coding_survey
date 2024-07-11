@@ -13,7 +13,9 @@ The input files you'll need are as follows.
 | --introfile   |  Introduction or consent form. Must end with a Yes/No question |
 | --instructionsfile   | Coding guidelines or instructions |
 | --question   |    The question asked for each item (same question for all items) |
+| --mcoptions | Multiple choice options for questions (default: Yes,No)
 
+Note that the response options for the consent are hard-wired to Yes and No.
 
 The `example` directory contains an example. You can create the example survey by executing:
 
@@ -23,7 +25,7 @@ python qualtrics_coding_survey.py \
     --introfile        example/intro.html \
     --instructionsfile example/instructions.html \
     --question         example/question.html \
-    --question_footer  example/question_footer.html \
+    --mcoptions        Yes,No \
 	> ./survey.txt
 ```
 
@@ -50,7 +52,7 @@ python qualtrics_coding_survey.py \
 
 ### To create the survey in Qualtrics for integration with Prolific
 
-If you will be recruiting using Prolific prolific.com , see the [Prolific Qualtrics Integration Guide](https://researcher-help.prolific.com/hc/en-gb/articles/360009224113-Qualtrics-integration-guide ) .
+If you will be recruiting using Prolific prolific.com, see the [Prolific Qualtrics Integration Guide](https://researcher-help.prolific.com/hc/en-gb/articles/360009224113-Qualtrics-integration-guide ) .
 
 
 
